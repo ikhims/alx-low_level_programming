@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main(void)
 {
     char ch = 'a';
@@ -12,6 +11,5 @@ int main(void)
 		ch++;
 	}
 	putchar('\n');
-
     return 0;
 }
