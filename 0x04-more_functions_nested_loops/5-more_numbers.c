@@ -1,23 +1,21 @@
 #include "main.h"
 
 /**
- * print_diagonal - print diagonal line based on input.
- *
- * @n:user input of number of line
- * Return: 0-15 10x and new line after
+ * more_numbers - prints 10 times the numbers, from 0 to 14
+ * followed by a new line
  */
-
 void more_numbers(void)
 {
-        int i, j;
+int i, j;
 
-        for (i = 0; i < n; i++)
-        {
-                for (j = 0; j < i; j++)
-                {
-                        if (j >= 10)
-                                _putchar(j / 10 + '0');
-                }
-                _putchar('\\');
-        }
+for (i = 0; i < 10; i++)
+{
+for (j = 0; j < 15; j++)
+{
+if (j >= 10)
+putchar(j / 10 + '0');
+putchar(j % 10 + '0');
+}
+putchar('\n');
+}
 }
