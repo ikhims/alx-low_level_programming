@@ -7,18 +7,17 @@
  * Return: 0-15 10x and new line after
  */
 
-void print_diagonal(int n)
+void more_numbers(void)
 {
-int i;
-int j;
+	int i, j;
 
-for (i = 0; i < n; i++)
-{
-for (j = 0; j < i; j++)
-{
-_putchar(' ');
-}
-_putchar('\\');
-_putchar('\n');
-}
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < i; j++)
+		{
+			if (j >= 10)
+				_putchar(j / 10 + '0');
+		}
+		_putchar('\\');
+	}
 }
