@@ -5,7 +5,7 @@
  *
  * Return: 0-15 10x and new line after
  */
-void more_numbers(void)
+int main(void)
 {
 
 int i, j;
